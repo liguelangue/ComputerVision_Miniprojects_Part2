@@ -15,11 +15,17 @@ Open the folder and run the python file --> WebCam2.py
 ## usage guide
 
 T	Toggle Translation Mode
+
 R	Toggle Rotation Mode
+
 S	Toggle Scaling Mode
+
 +/=	Increase scaling factor in Scaling Mode (After S is on)
+
 -/_	Decrease scaling factor in Scaling Mode (After S is on)
+
 P	Toggle Perspective Mode
+
 Q	Exit the application
 
 
