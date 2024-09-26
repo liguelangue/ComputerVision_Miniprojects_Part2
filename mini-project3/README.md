@@ -28,4 +28,6 @@ Features:
 1. Status Indicators
 2. FPS Display
 3. Original and Processed Frame Labels
+
 ## the link to the video demonstrating the application’s execution
+https://drive.google.com/file/d/1bSiaUgeB1nu8WgN3XLW5OogThGfjs917/view?usp=sharing
