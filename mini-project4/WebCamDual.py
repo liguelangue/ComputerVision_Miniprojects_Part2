@@ -11,16 +11,24 @@ cap1.set(cv2.CAP_PROP_FRAME_HEIGHT, 240)
 cap2.set(cv2.CAP_PROP_FRAME_WIDTH, 320)
 cap2.set(cv2.CAP_PROP_FRAME_HEIGHT, 240)
 
+# Initialize SIFT
 sift_on = False
 sift = cv2.SIFT_create(500)
 
+# Initialize ORB
+orb_on = False
+orb = cv2.ORB_create(nfeatures=1000)
+
 matching_on = False
+orb_matching_on = False
 
-# Initialize Brute-Force Matcher
-bf = cv2.BFMatcher(cv2.NORM_L2, crossCheck=True)
+# Initialize Brute-Force Matchers
+bf_sift = cv2.BFMatcher(cv2.NORM_L2, crossCheck=True)
+bf_orb = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
 
-# Fixed threshold
-threshold = 500
+# Fixed thresholds
+threshold_sift = 500
+threshold_orb = 500
 
 # Variables for FPS calculation
 start_time = time.time()
@@ -50,36 +58,51 @@ while True:
     gray2 = cv2.GaussianBlur(gray2, (5, 5), 0)
 
     # Keypoints & Descriptors
-    kp1, dp1 = sift.detectAndCompute(gray1, None)
-    kp2, dp2 = sift.detectAndCompute(gray2, None)
+    kp1, dp1, kp2, dp2 = None, None, None, None
 
-    # SIFT
+    if sift_on or matching_on:
+        # SIFT keypoints and descriptors
+        kp1, dp1 = sift.detectAndCompute(gray1, None)
+        kp2, dp2 = sift.detectAndCompute(gray2, None)
+    elif orb_on or orb_matching_on:
+        # ORB keypoints and descriptors
+        kp1, dp1 = orb.detectAndCompute(gray1, None)
+        kp2, dp2 = orb.detectAndCompute(gray2, None)
+
+    # Visualization
+    method_name = ''
     if sift_on:
+        method_name = 'SIFT Keypoints'
         frame1_kp1 = cv2.drawKeypoints(frame1, kp1, None, flags=cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
         frame2_kp2 = cv2.drawKeypoints(frame2, kp2, None, flags=cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
         combined = cv2.hconcat([frame1_kp1, frame2_kp2])
-
-    # Features Matching
-    elif matching_on:
-        if dp1 is not None and dp2 is not None:
-
-            matches = bf.match(dp1, dp2)
+    elif orb_on:
+        method_name = 'ORB Keypoints'
+        frame1_kp1 = cv2.drawKeypoints(frame1, kp1, None, flags=cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
+        frame2_kp2 = cv2.drawKeypoints(frame2, kp2, None, flags=cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
+        combined = cv2.hconcat([frame1_kp1, frame2_kp2])
+    elif matching_on or orb_matching_on:
+        if dp1 is not None and dp2 is not None and kp1 is not None and kp2 is not None:
+            if matching_on:
+                method_name = 'SIFT Matching'
+                matches = bf_sift.match(dp1, dp2)
+                threshold = threshold_sift
+            elif orb_matching_on:
+                method_name = 'ORB Matching'
+                matches = bf_orb.match(dp1, dp2)
+                threshold = threshold_orb
             matches = sorted(matches, key=lambda x: x.distance)
-
             # Get good matches
             good_matches = [m for m in matches if m.distance < threshold]
-
             # Calculate matching score
             total_keypoints = min(len(kp1), len(kp2))
             matching_score = len(good_matches) / total_keypoints if total_keypoints > 0 else 0
-            
-            # Calculate average distance of good matches, help to set threshold
+            # Calculate average distance of good matches
             avg_distance = np.mean([m.distance for m in good_matches]) if good_matches else 0
-            
-            # Draw top 10 matches
-            combined = cv2.drawMatches(frame1, kp1, frame2, kp2, good_matches[:10], None, 
+            # Draw top matches
+            combined = cv2.drawMatches(frame1, kp1, frame2, kp2, good_matches[:10], None,
                                        flags=cv2.DrawMatchesFlags_NOT_DRAW_SINGLE_POINTS)
-            
+            # Add text annotations
             cv2.putText(combined, f"Matching Score: {matching_score:.2f}", (10, 30),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
             cv2.putText(combined, f"Avg Distance: {avg_distance:.2f}", (10, 60),
@@ -91,6 +114,11 @@ while True:
     else:
         # Stack the frames from both cameras horizontally
         combined = cv2.hconcat([frame1, frame2])
+
+    # Display method name
+    if method_name:
+        cv2.putText(combined, method_name, (combined.shape[1] - 200, 30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
 
     # Calculate and display FPS
     frame_count += 1
@@ -107,12 +135,27 @@ while True:
     if key == ord('s'):
         sift_on = not sift_on
         matching_on = False
-    
-    if key == ord('m'):
+        orb_on = False
+        orb_matching_on = False
+
+    elif key == ord('m'):
         matching_on = not matching_on
         sift_on = False
+        orb_on = False
+        orb_matching_on = False
 
-    # Break the loop on 'q' key press
+    elif key == ord('o'):
+        orb_on = not orb_on
+        sift_on = False
+        matching_on = False
+        orb_matching_on = False
+
+    elif key == ord('n'):
+        orb_matching_on = not orb_matching_on
+        orb_on = False
+        sift_on = False
+        matching_on = False
+
     elif key == ord('q'):
         break
 
