@@ -11,7 +11,7 @@ Download the zip file or use GitHub Desktop to clone the file folder
 
 Install all required packages list in requirements.txt
 
-Open the folder and run the python file --> WebCam2.py
+Open the folder and run the python file --> WebCamDual.py
 
 ## usage guide
 
