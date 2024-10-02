@@ -29,9 +29,10 @@ Open the folder and run the python file --> WebCamDual.py
 
 ## description of the project
 Features:
-1. Status Indicators
-2. FPS Display
-3. Original and Processed Frame Labels
+1. Feature extraction using SIFT (Scale-Invariant Feature Transform) and ORB (Oriented FAST and Rotated BRIEF) algorithms.
+2. For SIFT - Brute-Force matcher based on the L2 norm, for ORB - Brute-Force matcher based on the Hamming distance.
+3. FPS Display
+
 
 ## the link to the video demonstrating the application’s execution
-https://drive.google.com/file/d/1bSiaUgeB1nu8WgN3XLW5OogThGfjs917/view?usp=sharing
+We submit the video t0 Github. 
