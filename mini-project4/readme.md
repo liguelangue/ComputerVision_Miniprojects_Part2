@@ -35,4 +35,4 @@ Features:
 
 
 ## the link to the video demonstrating the application’s execution
-We submit the video t0 Github. 
+We submit the video to Github. 
