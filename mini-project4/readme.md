@@ -1,5 +1,4 @@
-
-# CS5330_F24_Group8
+# CS5330_F24_Group8_Mini_Project_4
 
 ## project members
 
@@ -17,22 +16,25 @@ Open the folder and run the python file --> WebCamDual.py
 
 's': Toggle SIFT Keypoints display. 
 
-'m': Toggle SIFT Matching between the two frames.
+'m': Toggle SIFT Matching between the two frames
 
-'o': Toggle ORB Keypoints display.
+'o' Toggle ORB Keypoints display
 
-'n' Toggle ORB Matching between the two frames.
+'n'  Toggle ORB Matching between the two frames.
 
-'q' Quit the application.
-
+'q': Exit the application
 
 
 ## description of the project
 Features:
-1. Feature extraction using SIFT (Scale-Invariant Feature Transform) and ORB (Oriented FAST and Rotated BRIEF) algorithms.
-2. For SIFT - Brute-Force matcher based on the L2 norm, for ORB - Brute-Force matcher based on the Hamming distance.
-3. FPS Display
+1. Matches -- All matches connect using line
+2. Keypoints -- Keypoints detect by SIFT or ORB
+2. Good_matches -- Shwoing counts of good_matches
+3. FPS Display -- Display the FPS
+4. Matching_score -- Show the matching_score (Function: Numbers of Good   Matches / Total keypoints)
+5. AVG distance of good matches (Avg distance amoung all good matches)
+
 
 
 ## the link to the video demonstrating the application’s execution
-We submit the video to Github. 
+https://drive.google.com/file/d/1bSiaUgeB1nu8WgN3XLW5OogThGfjs917/view?usp=sharing
