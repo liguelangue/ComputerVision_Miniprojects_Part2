@@ -37,4 +37,4 @@ Features:
 
 
 ## the link to the video demonstrating the application’s execution
-https://drive.google.com/file/d/1bSiaUgeB1nu8WgN3XLW5OogThGfjs917/view?usp=sharing
+https://drive.google.com/file/d/1YvlKlwXwdUZOqCIBkMfvITmNSYs2CHWa/view?usp=sharing
