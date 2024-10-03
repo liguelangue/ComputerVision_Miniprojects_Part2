@@ -6,6 +6,12 @@ import time
 cap1 = cv2.VideoCapture(0)  # First camera
 cap2 = cv2.VideoCapture(1)  # Second camera, change the index if necessary
 
+if not cap1.isOpened() or not cap2.isOpened():
+    cap1 = cv2.VideoCapture('1.mp4')
+    cap1.set(cv2.CAP_PROP_POS_FRAMES, 0)
+    cap2 = cv2.VideoCapture('2.mp4')
+    cap2.set(cv2.CAP_PROP_POS_FRAMES, 0)
+
 cap1.set(cv2.CAP_PROP_FRAME_WIDTH, 320)
 cap1.set(cv2.CAP_PROP_FRAME_HEIGHT, 240)
 cap2.set(cv2.CAP_PROP_FRAME_WIDTH, 320)
@@ -44,9 +50,19 @@ while True:
     # Capture frame-by-frame from the second camera
     ret2, frame2 = cap2.read()
 
+    if not ret1:
+        cap1.set(cv2.CAP_PROP_POS_FRAMES, 0)
+        ret1, frame1 = cap1.read()  # Read the first frame again
+    if not ret2:
+        cap2.set(cv2.CAP_PROP_POS_FRAMES, 0)
+        ret2, frame2 = cap2.read()  # Read the first frame again
+
+
     # Check if frames are captured
     if not ret1 or not ret2:
         break
+    frame1 = cv2.resize(frame1, (320, 240))
+    frame2 = cv2.resize(frame2, (320, 240))
 
     if frame1.shape != frame2.shape:
         frame2 = cv2.resize(frame2, (frame1.shape[1], frame1.shape[0]))
