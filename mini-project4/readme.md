@@ -1,5 +1,7 @@
 # CS5330_F24_Group8_Mini_Project_4
 
+### If the live cam doesn't work, it will turn to use 2 videos in this folder, ALL keys remain the same functionality.
+
 ## project members
 
 Anning Tian, Pingyi Xu, Qinhao Zhang, Xinmeng Wu
