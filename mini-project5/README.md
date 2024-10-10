@@ -24,3 +24,5 @@ Open the folder and run the python file -->
 4. Interactive frame capture control through user input.
 
 ## the link to the video demonstrating the application’s execution
+https://northeastern.zoom.us/rec/share/HNiD6z74xgpd0wq5svYnH2nOI4CSIlUZtIhYXwY_0Opl6vnALL_YltP0xHywOGXU.9U55LPhkW84SWmPI
+
