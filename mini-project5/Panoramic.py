@@ -172,8 +172,8 @@ class PanoramaGenerator:
                 cv2.waitKey(0)
                 cv2.destroyAllWindows()
                 # Optionally, save the panorama
-                # cv2.imwrite('panorama.jpg', cropped_panorama)
-                # print("Panorama saved as 'panorama.jpg'")
+                cv2.imwrite('panorama.jpg', cropped_panorama)
+                print("Panorama saved as 'panorama.jpg'")
             else:
                 print("Failed to create panorama")
         else:
