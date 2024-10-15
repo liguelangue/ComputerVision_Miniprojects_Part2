@@ -31,6 +31,16 @@ out_filename = args.out
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
 out = cv2.VideoWriter(out_filename, fourcc, 20.0, (width, height), True)
 
+def region_of_interest(image):
+    height, width = image.shape
+    polygon = np.array([
+    [(0, height), (width, height), (int(0.55*width), int(0.6*height)), (int(0.45*width), int(0.6*height))]
+    ])
+    mask = np.zeros_like(image)
+    cv2.fillPoly(mask, polygon, 255)
+    masked_image = cv2.bitwise_and(image, mask)
+    return masked_image
+
 # loop over the frames from the video stream
 while True:
     # grab the frame from video stream
@@ -42,12 +52,22 @@ while True:
     #cv2.putText(frame, "Lane Detection", (int(width/4), int(height/2)),
     #            cv2.FONT_HERSHEY_SIMPLEX, 3, (0, 0, 255), 3)
 
+    # Convert each frame to grayscale
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    # Apply Gaussian Blur
+    blurred = cv2.GaussianBlur(gray, (5, 5), 0)
+    # Use Canny Edge Detection
+    edges = cv2.Canny(blurred, 50, 150)
+
+    # Apply ROI
+    roi_image = region_of_interest(edges)
+
     # Write the frame to the output video file
     if args.out:
-        out.write(frame)
+        out.write(roi_image)
 
     # show the output frame
-    cv2.imshow("Frame", frame)
+    cv2.imshow("Frame", roi_image)
     key = cv2.waitKey(1) & 0xFF
 
     # if the `q` key was pressed, break from the loop
