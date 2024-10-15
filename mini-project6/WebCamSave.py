@@ -24,6 +24,11 @@ class VideoProcessor:
         # Store rotation angle
         self.rotate_angle = rotate_angle
 
+        # Controls
+        self.detection_running = False
+        self.paused = False
+        self.show_fps = input_file is None
+
     def rotate_frame(self, frame, angle):
         """
         Rotate the frame by the specified angle.
@@ -207,19 +212,56 @@ class VideoProcessor:
                 self.draw_lines(frame, rotated_lines, color=(255, 0, 0))
 
         return frame
+    
+    def display_fps(self, frame, fps):
+        cv2.putText(frame, f"FPS: {fps:.2f}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 
     def start(self):
+        start_time = time.time()
+        frame_count = 0
+
         while True:
             ret, frame = self.vs.read()
             if not ret:
                 break
-
-            processed_frame = self.process_frame(frame)
             
-            self.out.write(processed_frame)
-            cv2.imshow("Frame", processed_frame)
+            if self.detection_running and not self.paused:
+                processed_frame = self.process_frame(frame)
+                frame_count += 1
 
-            if cv2.waitKey(1) & 0xFF == ord("q"):
+                font_scale = 1.5
+                font_thickness = 3
+                detection_text = 'Detection Started'
+                text_size = cv2.getTextSize(detection_text, cv2.FONT_HERSHEY_SIMPLEX, font_scale, font_thickness)[0]
+                text_x = frame.shape[1] - text_size[0] - 10
+                text_y = 40
+                cv2.putText(frame, detection_text, (text_x, text_y),
+                                cv2.FONT_HERSHEY_SIMPLEX, font_scale, (0, 0, 255), font_thickness)
+                if self.show_fps:
+
+                    elapsed_time = time.time() - start_time
+                    fps = frame_count / elapsed_time if elapsed_time > 0 else 0
+                    self.display_fps(processed_frame, fps)
+
+                self.out.write(processed_frame)
+                cv2.imshow("Frame", processed_frame)
+            
+            else:
+                if self.paused:
+                    detection_text = 'Detection Paused'
+                    cv2.putText(frame, detection_text, (text_x, text_y),
+                                cv2.FONT_HERSHEY_SIMPLEX, font_scale, (0, 0, 255), font_thickness)
+                cv2.imshow("Frame", frame)
+
+            key = cv2.waitKey(1) & 0xFF
+
+            if key == ord('s'):
+                self.detection_running = True
+                print('Detection started')
+            elif key == ord('p'):
+                self.paused = not self.paused
+                print('Detection paused' if self.paused else 'Detection resumed')
+            elif key == ord('q'):
                 break
 
         self.vs.release()
