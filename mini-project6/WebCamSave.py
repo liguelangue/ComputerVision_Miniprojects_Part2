@@ -209,7 +209,7 @@ class VideoProcessor:
 
             # Draw the rotated lines on the original frame
             if rotated_lines is not None:
-                self.draw_lines(frame, rotated_lines, color=(255, 0, 0))
+                self.draw_lines(frame, rotated_lines, color=(0, 0, 255))
 
         return frame
     
