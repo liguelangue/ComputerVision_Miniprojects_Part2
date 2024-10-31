@@ -14,7 +14,7 @@ Open the folder and run the python file -->
 
 WebCamSave.py is the name of the Python file
 
--f lane_test.mp4 specifies the input video file: lane_test.mp4 is a Real Road Recording, lane_test1.mp4, lane_test2.mp4 and lane_test3.mp4 are provided testing videos.
+-f lane_test.mp4 specifies the input video file: lane_test.mp4 is a **Real Road Recording**, lane_test1.mp4, lane_test2.mp4 and lane_test3.mp4 are provided testing videos.
 
 -o output.avi specifies the name of the output video file
 
@@ -37,18 +37,22 @@ WebCamSave.py is the name of the Python file
    - Use Canny Edge Detection algorithm to find edges in the image.
    - Define and apply a region of interest mask to focus on the road area.
 
-3. Line Detection using Hough Transform:
+3. black mask processing：
+   - Create a trapezoid-shaped mask and applies it to the input image using bitwise operations, effectively blacking out everything outside the region of interest defined by the trapezoid.
+
+4. Line Detection using Hough Transform:
    - Apply the Hough Transform algorithm to the edge-detected image.
    - The output is a set of line segments that potentially represent lane markings.
 
-4. Line Filtering and Averaging:
+5. Line Filtering and Averaging:
    - Categorize detected lines into left and right lane lines based on their slope and position.
    - Calculate the average slope and intercept for each category (left and right).
    - This step uses concepts from linear regression to find the best representative line for each lane.
 
-5. Line Extrapolation and Drawing:
+6. Line Extrapolation and Drawing:
    - Use the average slope and intercept to extrapolate full-length lines.
    - This step produces the visual output of the detected lanes.
+
 
 ## the link to the video demonstrating the application’s execution
 https://drive.google.com/file/d/1hGRPit_ocD2FCuGKHZ1n_0lT_7oKM6H0/view?usp=sharing

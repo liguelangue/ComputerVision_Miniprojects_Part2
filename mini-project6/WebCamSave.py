@@ -98,6 +98,14 @@ class VideoProcessor:
         """
         Apply a mask to keep only the region of interest (trapezoid).
         """
+        mask = np.zeros_like(img)   
+        #Defining a 3 channel or 1 channel color to fill the mask with depending on the input image
+        if len(img.shape) > 2:
+            channel_count = img.shape[2]
+            ignore_mask_color = (255,) * channel_count
+        else:
+            ignore_mask_color = 255
+
         height, width = img.shape
         polygon = np.array([[
             (0, height),
@@ -107,7 +115,7 @@ class VideoProcessor:
         ]], np.int32)
 
         mask = np.zeros_like(img)
-        cv2.fillPoly(mask, polygon, 255)
+        cv2.fillPoly(mask, polygon, ignore_mask_color)
         masked_img = cv2.bitwise_and(img, mask)
         return masked_img
 
