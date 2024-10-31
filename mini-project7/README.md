@@ -29,13 +29,13 @@ In the upper left corner, it shows the FPS and the name of the detected object.
 https://drive.google.com/drive/folders/1lepJM4a6fBqTWQajXSQDB5o8iK8lRQn8?usp=sharing
 
 ## Details about the dataset
-bottle: 102
+bottle: 225
 
 remote: 336
 
 phone: 362
 
-TV: 222
+TV: 292
 
 ## Data Preprocessing
 
