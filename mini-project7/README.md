@@ -26,7 +26,7 @@ python live_test.py
 In the upper left corner, it shows the FPS and the name of the detected object.
 
 # Dataset Information
-https://drive.google.com/drive/folders/1HVBUovU7FnGtGbrkhWHDfv8E3a6zUMYD?usp=drive_link
+https://drive.google.com/drive/folders/1lepJM4a6fBqTWQajXSQDB5o8iK8lRQn8?usp=sharing
 
 ## Details about the dataset
 bottle: 102
@@ -104,4 +104,5 @@ Class Imbalance: The model had more difficulty with some categories. This could 
 Performance on Small Dataset: Given the good performance metrics, it seems the data preprocessing (cropping, renaming, and organizing) and data augmentation contributed positively, though further dataset expansion could enhance the model’s robustness.
 
 # The link to the video demonstrating
+https://drive.google.com/file/d/16cShBRE_qC22WpVMg75ucgmQRWxBtn42/view?usp=sharing
 
