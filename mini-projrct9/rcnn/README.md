@@ -1,8 +1,5 @@
 # CS5330_F24_Group8_Assignment9-1
 
-
-
-
 ## Project Members
 
 Anning Tian, Pingyi Xu, Qinhao Zhang, Xinmeng Wu
