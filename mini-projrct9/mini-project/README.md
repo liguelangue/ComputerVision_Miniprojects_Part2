@@ -55,3 +55,7 @@ WebCamSave.py is the name of the Python file
 ## the link to the video demonstrating the application’s execution
 https://drive.google.com/file/d/1hGRPit_ocD2FCuGKHZ1n_0lT_7oKM6H0/view?usp=sharing
 
+### model evaluation metrics
+![1](./images/confusion_matrix.png)
+![2](./images/PR_curve.png)
+

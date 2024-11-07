@@ -1,5 +1,9 @@
 # CS5330_F24_Group8_Assignment9-1
 
+### Video
+https://drive.google.com/file/d/1IBJ3rCZaf0uStbT0nlqvER1uQQe6uScx/view
+
+
 ## Project Members
 
 Anning Tian, Pingyi Xu, Qinhao Zhang, Xinmeng Wu
@@ -33,8 +37,8 @@ Download the LabelMe -->
 5. Using collected dataset to train the RCNN model and extract the model as h5 file.
 
 
-## The link to the trained model
-https://drive.google.com/...
+## The link to the trained model/Dataset/figures
+https://drive.google.com/drive/folders/1hgoLHvH7a6ss4Y-cUEN0nUw3IqbZ8LUA?usp=sharing
 
 
 # CS5330_F24_Group8_Mini_Project_9-2
@@ -61,8 +65,8 @@ python WebCamSave_V3.py
 
 In the upper left corner, it shows the FPS, and after detection, different objects are highlighted in different colors.
 
-## Dataset Information and Catalog：
-- Link: https://drive.google.com/drive/folders/1lepJM4a6fBqTWQajXSQDB5o8iK8lRQn8?usp=sharing
+## The link to the trained model/Dataset/figures
+https://drive.google.com/drive/folders/1hgoLHvH7a6ss4Y-cUEN0nUw3IqbZ8LUA?usp=sharing
 - Catalog: Phone, TV, Glass
 
 
