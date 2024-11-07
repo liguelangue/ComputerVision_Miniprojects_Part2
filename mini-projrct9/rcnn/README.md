@@ -1,7 +1,6 @@
 # CS5330_F24_Group8_Assignment9-1
 
-### Video
-https://drive.google.com/file/d/1IBJ3rCZaf0uStbT0nlqvER1uQQe6uScx/view
+
 
 
 ## Project Members
@@ -40,6 +39,9 @@ Download the LabelMe -->
 ## The link to the trained model/Dataset/figures
 https://drive.google.com/drive/folders/1hgoLHvH7a6ss4Y-cUEN0nUw3IqbZ8LUA?usp=sharing
 
+### Video
+https://drive.google.com/file/d/1IBJ3rCZaf0uStbT0nlqvER1uQQe6uScx/view
+
 
 # CS5330_F24_Group8_Mini_Project_9-2
 ## Project Members
@@ -68,6 +70,9 @@ In the upper left corner, it shows the FPS, and after detection, different objec
 ## The link to the trained model/Dataset/figures
 https://drive.google.com/drive/folders/1hgoLHvH7a6ss4Y-cUEN0nUw3IqbZ8LUA?usp=sharing
 - Catalog: Phone, TV, Glass
+
+### Video
+https://drive.google.com/file/d/1IBJ3rCZaf0uStbT0nlqvER1uQQe6uScx/view
 
 
 ## Details about the dataset
