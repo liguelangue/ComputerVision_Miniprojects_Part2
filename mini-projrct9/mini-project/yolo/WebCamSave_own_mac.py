@@ -2,7 +2,7 @@ import torch
 import cv2
 
 # load trained model under yolov5 root file
-model = torch.hub.load('./yolov5', 'custom', path='yolov5/runs/train/exp2/weights/best.pt', source='local')  # 加载你的 best.pt 模型
+model = torch.hub.load('./yolov5', 'custom', path='yolov5/runs/train/exp2/weights/best.pt', source='local')
 
 # initial live cam
 cap = cv2.VideoCapture(0)

@@ -36,10 +36,6 @@ Download the LabelMe -->
 ## The link to the trained model/Dataset/figures
 https://drive.google.com/drive/folders/1hgoLHvH7a6ss4Y-cUEN0nUw3IqbZ8LUA?usp=sharing
 
-### Video
-https://drive.google.com/file/d/1IBJ3rCZaf0uStbT0nlqvER1uQQe6uScx/view
-
-
 # CS5330_F24_Group8_Mini_Project_9-2
 ## Project Members
 Anning Tian, Pingyi Xu, Qinhao Zhang, Xinmeng Wu
@@ -68,16 +64,13 @@ In the upper left corner, it shows the FPS, and after detection, different objec
 https://drive.google.com/drive/folders/1hgoLHvH7a6ss4Y-cUEN0nUw3IqbZ8LUA?usp=sharing
 - Catalog: Phone, TV, Glass
 
-### Video
-https://drive.google.com/file/d/1IBJ3rCZaf0uStbT0nlqvER1uQQe6uScx/view
-
 
 ## Details about the dataset
-Phone: 584
+Phone: 338
 
-Glass: 139
+Glass: 129
 
-TV: 386
+TV: 276
 
 ## Data Preprocessing
 ### Resize Frame：
@@ -108,5 +101,5 @@ In tracking mode, the program updates the position of each tracker and redraws b
 - Tracking Algorithm: Uses KCF Tracker as it balances speed and accuracy for real-time tracking.
 
 ## The link to the video demonstrating
-
+https://drive.google.com/file/d/1IBJ3rCZaf0uStbT0nlqvER1uQQe6uScx/view
 
