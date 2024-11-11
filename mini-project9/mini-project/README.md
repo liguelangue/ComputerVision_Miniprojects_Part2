@@ -33,7 +33,10 @@ Model: yoloV5n.pt
 --batch-size default   
 
 ## the link to the video demonstrating the application’s execution
-https://northeastern.zoom.us/rec/share/UtCU7pPjiXOpv6H6UgafInP_EgRK2kC1De45IXN3yedXqdCs1PxJDY8vgKVnfK9D.AR9GchSa5coyEJjl?startTime=1730969196000
+https://northeastern.zoom.us/rec/share/UtCU7pPjiXOpv6H6UgafInP_EgRK2kC1De45IXN3yedXqdCs1PxJDY8vgKVnfK9D.AR9GchSa5coyEJjl?startTime=1730969196000    
+     
+## the link to the model and dataset
+https://drive.google.com/drive/folders/1-hJrmhvnCkEGaa6dsMNjiiF5bGGs0BsP?usp=sharing
 
 ### model evaluation metrics
 ![1](./images/confusion_matrix.png)
