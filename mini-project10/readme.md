@@ -12,7 +12,7 @@ Download the model and training dataset
 ### Model/Dataset Download Link:
 https://drive.google.com/drive/folders/1sIOYjd31C8-2HazLxVR1i6RRx8K1Mt1_?usp=sharing
 
-# Horse Mask Segmentation using Attention U-Net
+---
 
 This project implements a segmentation model for identifying horse masks in images using an Attention U-Net architecture. The code covers data preparation, model definition, training, and evaluation.
 
