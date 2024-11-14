@@ -166,7 +166,7 @@ This project implements a segmentation model for identifying horse masks in imag
 
 **Challenge 1:**: We implemented data augmentation to improve model generalization, but it did not significantly enhance performance in this regard. For instance, when testing with horses in complex poses, the augmented data failed to improve the model's ability to generalize to these variations. 
 
-**Potential Improvement 1: **: Experimenting with more diverse or targeted augmentation techniques, such as pose-specific transformations or synthetic data generation, could better capture complex variations and improve generalization.
+**Potential Improvement 1:**: Experimenting with more diverse or targeted augmentation techniques, such as pose-specific transformations or synthetic data generation, could better capture complex variations and improve generalization.
 
 **Challenge 2:** We used dynamic learning rate adjustment (ReduceLROnPlateau) and early stopping to optimize the training process. However, these methods conflicted, as early stopping halted training when the model reached convergence, while dynamic learning rate adjustments aimed to continue fine-tuning. Ultimately, we prioritized dynamic learning rate adjustment.
     
