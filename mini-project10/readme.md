@@ -14,7 +14,7 @@ This project implements a segmentation model for identifying horse masks in imag
 
 ### Dataset Details
 - **Source**:
-- **Link**:
+- **Link**: [Weizmann Horse Dataset](https://www.kaggle.com/datasets/ztaihong/weizmann-horse-database)
 - **Catalog**：
 - **Total Images**:
 - **Total Masks**: 
