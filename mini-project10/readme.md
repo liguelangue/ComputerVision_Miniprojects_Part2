@@ -59,9 +59,7 @@ This project implements a segmentation model for identifying horse masks in imag
 
     The attention mechanism can be expressed as:
 
-    \[
-    \text{Attention}(x, g) = x \times \sigma(\text{ReLU}(\theta(x) + \phi(g)))
-    \]
+    $\text{Attention}(x, g) = x \times \sigma(\text{ReLU}(\theta(x) + \phi(g)))$
 
     where $\theta$ and $\phi$ are 1x1 convolution layers applied to the skip connection and gating signal, respectively.
 
@@ -95,25 +93,19 @@ This project implements a segmentation model for identifying horse masks in imag
     
     **Dice Coefficient**:
 
-    `$$
-    \text{Dice Coefficient} = \frac{2 \cdot |y_{\text{true}} \cap y_{\text{pred}}| + \text{smooth}}{|y_{\text{true}}| + |y_{\text{pred}}| + \text{smooth}}
-    $$`
+    $\text{Dice Coefficient} = \frac{2 \cdot |y_{\text{true}} \cap y_{\text{pred}}| + \text{smooth}}{|y_{\text{true}}| + |y_{\text{pred}}| + \text{smooth}}$,
 
     where $y_{\text{true}}$ and $y_{\text{pred}}$ are the flattened ground truth and predicted masks, respectively.
 
     **Binary Cross-Entropy (BCE) Loss**:
 
-    `$$
-    \text{BCE Loss} = - \frac{1}{N} \sum_{i=1}^{N} \left( y_i \log(p_i) + (1 - y_i) \log(1 - p_i) \right)
-    $$`
+    $\text{BCE Loss} = - \frac{1}{N} \sum_{i=1}^{N} \left( y_i \log(p_i) + (1 - y_i) \log(1 - p_i) \right)$,
 
     where $y_i$ is the true label and $p_i$ is the predicted probability.
 
     **Combined Loss**:
 
-    `$$
-    \text{Combined Loss} = \text{Dice Loss} + \text{BCE Loss}
-    $$`
+    $\text{Combined Loss} = \text{Dice Loss} + \text{BCE Loss}$,
 
 - **Dynamic Learning Rate Adjustment** (`ReduceLROnPlateau`):
   - The learning rate is reduced by half if the validation loss plateaus for three epochs, with a minimum learning rate threshold of $1 \times 10^{-6}$.
@@ -141,9 +133,7 @@ This project implements a segmentation model for identifying horse masks in imag
 
   The formula for IoU is:
 
-  `$$
-  \text{IoU} = \frac{|y_{\text{true}} \cap y_{\text{pred}}|}{|y_{\text{true}} \cup y_{\text{pred}}|}
-  $$`
+  $\text{IoU} = \frac{|y_{\text{true}} \cap y_{\text{pred}}|}{|y_{\text{true}} \cup y_{\text{pred}}|}$
 
 - **Prediction Display** (`display_predictions`):
   - This function randomly selects three test samples, generates predictions, and displays the results.
