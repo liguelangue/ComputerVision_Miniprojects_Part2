@@ -6,7 +6,7 @@ Anning Tian, Pingyi Xu, Qinhao Zhang, Xinmeng Wu
 
 ## setup instructions
 
-Download the zip file or use GitHub Desktop to clone the file folder
+Download the zip file or use GitHub Desktop to clone the file folder     
 Download the model and training dataset
 
 ### Model/Dataset Download Link:
