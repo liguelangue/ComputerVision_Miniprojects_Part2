@@ -81,6 +81,9 @@ This project implements a segmentation model for identifying horse masks in imag
 
 ### Training and Callbacks
 
+- **Batch Size**: 16
+- **epochs**: 100
+
 - **Optimizer**:
   - The model uses the **Adam optimizer** with a learning rate of `0.001`.
 
