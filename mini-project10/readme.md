@@ -1,3 +1,15 @@
+# CS5330_F24_Group8_Mini_Project_10
+
+## project members
+
+Anning Tian, Pingyi Xu, Qinhao Zhang, Xinmeng Wu
+
+## setup instructions
+
+Download the zip file or use GitHub Desktop to clone the file folder
+
+## usage guide
+
 # Horse Mask Segmentation using Attention U-Net
 
 This project implements a segmentation model for identifying horse masks in images using an Attention U-Net architecture. The code covers data preparation, model definition, training, and evaluation.
@@ -143,4 +155,16 @@ This project implements a segmentation model for identifying horse masks in imag
 
 --- 
 
-This README provides a concise breakdown of the code structure, model architecture, training process, and evaluation methods used in this segmentation model. Let me know if further details are needed!
+### Challenges and Potential Improvements
+
+1. 
+
+**Challenge**: We implemented data augmentation to improve model generalization, but it did not significantly enhance performance in this regard. For instance, when testing with horses in complex poses, the augmented data failed to improve the model's ability to generalize to these variations. 
+
+**Potential Improvement**: Experimenting with more diverse or targeted augmentation techniques, such as pose-specific transformations or synthetic data generation, could better capture complex variations and improve generalization.
+    
+2. 
+
+**Challenge:** We used dynamic learning rate adjustment (ReduceLROnPlateau) and early stopping to optimize the training process. However, these methods conflicted, as early stopping halted training when the model reached convergence, while dynamic learning rate adjustments aimed to continue fine-tuning. Ultimately, we prioritized dynamic learning rate adjustment.
+    
+**Potential Improvement**: Consider tuning early stopping parameters to trigger after a longer period of convergence, allowing the learning rate adjustments to take effect more fully without prematurely ending training. Alternatively, adaptive stopping criteria that account for learning rate changes could be explored.
