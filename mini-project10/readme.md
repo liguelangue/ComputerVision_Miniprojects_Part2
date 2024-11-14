@@ -13,13 +13,13 @@ This project implements a segmentation model for identifying horse masks in imag
 ---
 
 ### Dataset Details
-- **Source**:
+- **Source**: The dataset used in this project is publicly available online.
 - **Link**: [Weizmann Horse Dataset](https://www.kaggle.com/datasets/ztaihong/weizmann-horse-database)
 - **Structure**: The dataset is structured in folders as follows:
   - `horse/`: Contains the images of horses in `.png` format.
   - `mask/`: Contains the binary masks for each horse image in `.png` format.
-- **Total Images**:
-- **Total Masks**: 
+- **Total Images**: 327 horse images.
+- **Total Masks**: 327 corresponding mask images.
 
 ---
 
