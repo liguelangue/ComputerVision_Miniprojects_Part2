@@ -31,16 +31,6 @@ This project implements a segmentation model for identifying horse masks in imag
 
 ---
 
-## Contents
-
-1. [Dataset Details](#dataset-details)
-2. [Data Loading and Preparation](#data-loading-and-preparation)
-3. [Model Architecture: Attention U-Net](#model-architecture-attention-u-net)
-4. [Training and Callbacks](#training-and-callbacks)
-5. [Evaluation and Prediction Display](#evaluation-and-prediction-display)
-
----
-
 ### Dataset Details
 - **Source**: The dataset used in this project is publicly available online.
 - **Link**: [Weizmann Horse Dataset](https://www.kaggle.com/datasets/ztaihong/weizmann-horse-database)
