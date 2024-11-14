@@ -8,6 +8,10 @@ Anning Tian, Pingyi Xu, Qinhao Zhang, Xinmeng Wu
 
 Download the zip file or use GitHub Desktop to clone the file folder
 
+# Horse Mask Segmentation using Attention U-Net
+
+This project implements a segmentation model for identifying horse masks in images using an Attention U-Net architecture. The code covers data preparation, model definition, training, and evaluation.
+
 ## Usage Guidance
 
 - **Training** (`train.py`): This script is used to train the model. To run it:
@@ -21,10 +25,6 @@ Download the zip file or use GitHub Desktop to clone the file folder
   - After making these changes, you can test the model by running `python test.py` or `python3 test.py`.
 
 ---
-
-# Horse Mask Segmentation using Attention U-Net
-
-This project implements a segmentation model for identifying horse masks in images using an Attention U-Net architecture. The code covers data preparation, model definition, training, and evaluation.
 
 ## Contents
 
