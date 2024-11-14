@@ -59,9 +59,9 @@ This project implements a segmentation model for identifying horse masks in imag
 
     The attention mechanism can be expressed as:
 
-    `$$
+    \[
     \text{Attention}(x, g) = x \times \sigma(\text{ReLU}(\theta(x) + \phi(g)))
-    $$`
+    \]
 
     where $\theta$ and $\phi$ are 1x1 convolution layers applied to the skip connection and gating signal, respectively.
 
