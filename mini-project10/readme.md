@@ -13,11 +13,11 @@ This project implements a segmentation model for identifying horse masks in imag
 ---
 
 ### Dataset Details
-- ** Source**:
-- ** Link**:
-- ** Catalog**：
-- ** Total Images**:
-- ** Total Masks**: 
+- **Source**:
+- **Link**:
+- **Catalog**：
+- **Total Images**:
+- **Total Masks**: 
 
 ---
 
