@@ -8,7 +8,19 @@ Anning Tian, Pingyi Xu, Qinhao Zhang, Xinmeng Wu
 
 Download the zip file or use GitHub Desktop to clone the file folder
 
-## usage guide
+## Usage Guidance
+
+- **Training** (`train.py`): This script is used to train the model. To run it:
+  - Update `image_path` and `mask_path` variables to point to the location of your images and masks.
+  - Modify `epochs` and `batch size` as needed based on your training requirements.
+  - Adjust the `learning rate`, and specify the desired model save path and filename.
+  - Once configured, you can start training by running `python train.py` or `python3 train.py`.
+
+- **Testing** (`test.py`): This script allows testing the model on any image to evaluate its segmentation performance.
+  - Update the test image path as well as the model path to specify the desired model for testing.
+  - After making these changes, you can test the model by running `python test.py` or `python3 test.py`.
+
+---
 
 # Horse Mask Segmentation using Attention U-Net
 
