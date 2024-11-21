@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6840CAA42CED4AB700C78E53 /* UserPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6840CAA32CED4AB700C78E53 /* UserPageView.swift */; };
+		6840CAA82CED4B1300C78E53 /* PostPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6840CAA72CED4B1300C78E53 /* PostPageView.swift */; };
+		6840CAAA2CED4B2C00C78E53 /* EmojiManagerPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6840CAA92CED4B2C00C78E53 /* EmojiManagerPageView.swift */; };
+		6840CAAC2CED4BD700C78E53 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6840CAAB2CED4BD700C78E53 /* MainTabView.swift */; };
+		6840CAAE2CED4C0400C78E53 /* MessagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6840CAAD2CED4C0400C78E53 /* MessagePage.swift */; };
+		6840CAB02CED4C8200C78E53 /* ModelPRocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6840CAAF2CED4C8200C78E53 /* ModelPRocessor.swift */; };
+		6840CAB22CED4C9E00C78E53 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6840CAB12CED4C9E00C78E53 /* CameraView.swift */; };
+		6840CAB42CED4E4D00C78E53 /* ShortVideoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6840CAB32CED4E4D00C78E53 /* ShortVideoPage.swift */; };
+		684F83212CADC13F00238372 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684F83202CADC13F00238372 /* App.swift */; };
+		684F83232CADC13F00238372 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684F83222CADC13F00238372 /* Home.swift */; };
+		684F83252CADC14000238372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684F83242CADC14000238372 /* Assets.xcassets */; };
+		684F83282CADC14000238372 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684F83272CADC14000238372 /* Preview Assets.xcassets */; };
+		684F83322CADC14000238372 /* Keyboard_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684F83312CADC14000238372 /* Keyboard_testTests.swift */; };
+		684F833C2CADC14000238372 /* Keyboard_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684F833B2CADC14000238372 /* Keyboard_testUITests.swift */; };
+		684F833E2CADC14000238372 /* Keyboard_testUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684F833D2CADC14000238372 /* Keyboard_testUITestsLaunchTests.swift */; };
+		684F83512CADC32B00238372 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684F83502CADC32B00238372 /* KeyboardViewController.swift */; };
+		684F83552CADC32B00238372 /* Keyboard_extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 684F834E2CADC32B00238372 /* Keyboard_extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		684F832E2CADC14000238372 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 684F83152CADC13F00238372 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 684F831C2CADC13F00238372;
+			remoteInfo = Keyboard_test;
+		};
+		684F83382CADC14000238372 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 684F83152CADC13F00238372 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 684F831C2CADC13F00238372;
+			remoteInfo = Keyboard_test;
+		};
+		684F83532CADC32B00238372 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 684F83152CADC13F00238372 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 684F834D2CADC32B00238372;
+			remoteInfo = Keyboard_extension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		684F83562CADC32B00238372 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				684F83552CADC32B00238372 /* Keyboard_extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6840CAA32CED4AB700C78E53 /* UserPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPageView.swift; sourceTree = "<group>"; };
+		6840CAA72CED4B1300C78E53 /* PostPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPageView.swift; sourceTree = "<group>"; };
+		6840CAA92CED4B2C00C78E53 /* EmojiManagerPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiManagerPageView.swift; sourceTree = "<group>"; };
+		6840CAAB2CED4BD700C78E53 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		6840CAAD2CED4C0400C78E53 /* MessagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePage.swift; sourceTree = "<group>"; };
+		6840CAAF2CED4C8200C78E53 /* ModelPRocessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPRocessor.swift; sourceTree = "<group>"; };
+		6840CAB12CED4C9E00C78E53 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		6840CAB32CED4E4D00C78E53 /* ShortVideoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortVideoPage.swift; sourceTree = "<group>"; };
+		684F831D2CADC13F00238372 /* Keyboard_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keyboard_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		684F83202CADC13F00238372 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		684F83222CADC13F00238372 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		684F83242CADC14000238372 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		684F83272CADC14000238372 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		684F832D2CADC14000238372 /* Keyboard_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Keyboard_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		684F83312CADC14000238372 /* Keyboard_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard_testTests.swift; sourceTree = "<group>"; };
+		684F83372CADC14000238372 /* Keyboard_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Keyboard_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		684F833B2CADC14000238372 /* Keyboard_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard_testUITests.swift; sourceTree = "<group>"; };
+		684F833D2CADC14000238372 /* Keyboard_testUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard_testUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		684F834E2CADC32B00238372 /* Keyboard_extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Keyboard_extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		684F83502CADC32B00238372 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		684F83522CADC32B00238372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		684F831A2CADC13F00238372 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		684F832A2CADC14000238372 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		684F83342CADC14000238372 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		684F834B2CADC32B00238372 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		684F83142CADC13F00238372 = {
+			isa = PBXGroup;
+			children = (
+				684F831F2CADC13F00238372 /* App_total */,
+				684F83302CADC14000238372 /* Keyboard_testTests */,
+				684F833A2CADC14000238372 /* Keyboard_testUITests */,
+				684F834F2CADC32B00238372 /* Extension_Keyboard */,
+				684F831E2CADC13F00238372 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		684F831E2CADC13F00238372 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				684F831D2CADC13F00238372 /* Keyboard_test.app */,
+				684F832D2CADC14000238372 /* Keyboard_testTests.xctest */,
+				684F83372CADC14000238372 /* Keyboard_testUITests.xctest */,
+				684F834E2CADC32B00238372 /* Keyboard_extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		684F831F2CADC13F00238372 /* App_total */ = {
+			isa = PBXGroup;
+			children = (
+				684F83202CADC13F00238372 /* App.swift */,
+				6840CAAD2CED4C0400C78E53 /* MessagePage.swift */,
+				6840CAAB2CED4BD700C78E53 /* MainTabView.swift */,
+				6840CAB32CED4E4D00C78E53 /* ShortVideoPage.swift */,
+				6840CAA72CED4B1300C78E53 /* PostPageView.swift */,
+				684F83222CADC13F00238372 /* Home.swift */,
+				6840CAA92CED4B2C00C78E53 /* EmojiManagerPageView.swift */,
+				6840CAA32CED4AB700C78E53 /* UserPageView.swift */,
+				6840CAAF2CED4C8200C78E53 /* ModelPRocessor.swift */,
+				6840CAB12CED4C9E00C78E53 /* CameraView.swift */,
+				684F83242CADC14000238372 /* Assets.xcassets */,
+				684F83262CADC14000238372 /* Preview Content */,
+			);
+			path = App_total;
+			sourceTree = "<group>";
+		};
+		684F83262CADC14000238372 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				684F83272CADC14000238372 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		684F83302CADC14000238372 /* Keyboard_testTests */ = {
+			isa = PBXGroup;
+			children = (
+				684F83312CADC14000238372 /* Keyboard_testTests.swift */,
+			);
+			path = Keyboard_testTests;
+			sourceTree = "<group>";
+		};
+		684F833A2CADC14000238372 /* Keyboard_testUITests */ = {
+			isa = PBXGroup;
+			children = (
+				684F833B2CADC14000238372 /* Keyboard_testUITests.swift */,
+				684F833D2CADC14000238372 /* Keyboard_testUITestsLaunchTests.swift */,
+			);
+			path = Keyboard_testUITests;
+			sourceTree = "<group>";
+		};
+		684F834F2CADC32B00238372 /* Extension_Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				684F83502CADC32B00238372 /* KeyboardViewController.swift */,
+				684F83522CADC32B00238372 /* Info.plist */,
+			);
+			path = Extension_Keyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		684F831C2CADC13F00238372 /* Keyboard_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 684F83412CADC14000238372 /* Build configuration list for PBXNativeTarget "Keyboard_test" */;
+			buildPhases = (
+				684F83192CADC13F00238372 /* Sources */,
+				684F831A2CADC13F00238372 /* Frameworks */,
+				684F831B2CADC13F00238372 /* Resources */,
+				684F83562CADC32B00238372 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				684F83542CADC32B00238372 /* PBXTargetDependency */,
+			);
+			name = Keyboard_test;
+			productName = Keyboard_test;
+			productReference = 684F831D2CADC13F00238372 /* Keyboard_test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		684F832C2CADC14000238372 /* Keyboard_testTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 684F83442CADC14000238372 /* Build configuration list for PBXNativeTarget "Keyboard_testTests" */;
+			buildPhases = (
+				684F83292CADC14000238372 /* Sources */,
+				684F832A2CADC14000238372 /* Frameworks */,
+				684F832B2CADC14000238372 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				684F832F2CADC14000238372 /* PBXTargetDependency */,
+			);
+			name = Keyboard_testTests;
+			productName = Keyboard_testTests;
+			productReference = 684F832D2CADC14000238372 /* Keyboard_testTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		684F83362CADC14000238372 /* Keyboard_testUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 684F83472CADC14000238372 /* Build configuration list for PBXNativeTarget "Keyboard_testUITests" */;
+			buildPhases = (
+				684F83332CADC14000238372 /* Sources */,
+				684F83342CADC14000238372 /* Frameworks */,
+				684F83352CADC14000238372 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				684F83392CADC14000238372 /* PBXTargetDependency */,
+			);
+			name = Keyboard_testUITests;
+			productName = Keyboard_testUITests;
+			productReference = 684F83372CADC14000238372 /* Keyboard_testUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		684F834D2CADC32B00238372 /* Keyboard_extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 684F83592CADC32B00238372 /* Build configuration list for PBXNativeTarget "Keyboard_extension" */;
+			buildPhases = (
+				684F834A2CADC32B00238372 /* Sources */,
+				684F834B2CADC32B00238372 /* Frameworks */,
+				684F834C2CADC32B00238372 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Keyboard_extension;
+			productName = Keyboard_extension;
+			productReference = 684F834E2CADC32B00238372 /* Keyboard_extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		684F83152CADC13F00238372 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					684F831C2CADC13F00238372 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					684F832C2CADC14000238372 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 684F831C2CADC13F00238372;
+					};
+					684F83362CADC14000238372 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 684F831C2CADC13F00238372;
+					};
+					684F834D2CADC32B00238372 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 684F83182CADC13F00238372 /* Build configuration list for PBXProject "Keyboard_test" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 684F83142CADC13F00238372;
+			productRefGroup = 684F831E2CADC13F00238372 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				684F831C2CADC13F00238372 /* Keyboard_test */,
+				684F832C2CADC14000238372 /* Keyboard_testTests */,
+				684F83362CADC14000238372 /* Keyboard_testUITests */,
+				684F834D2CADC32B00238372 /* Keyboard_extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		684F831B2CADC13F00238372 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				684F83282CADC14000238372 /* Preview Assets.xcassets in Resources */,
+				684F83252CADC14000238372 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		684F832B2CADC14000238372 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		684F83352CADC14000238372 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		684F834C2CADC32B00238372 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		684F83192CADC13F00238372 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6840CAA82CED4B1300C78E53 /* PostPageView.swift in Sources */,
+				684F83232CADC13F00238372 /* Home.swift in Sources */,
+				6840CAB22CED4C9E00C78E53 /* CameraView.swift in Sources */,
+				6840CAA42CED4AB700C78E53 /* UserPageView.swift in Sources */,
+				6840CAAC2CED4BD700C78E53 /* MainTabView.swift in Sources */,
+				6840CAB02CED4C8200C78E53 /* ModelPRocessor.swift in Sources */,
+				6840CAAA2CED4B2C00C78E53 /* EmojiManagerPageView.swift in Sources */,
+				6840CAAE2CED4C0400C78E53 /* MessagePage.swift in Sources */,
+				684F83212CADC13F00238372 /* App.swift in Sources */,
+				6840CAB42CED4E4D00C78E53 /* ShortVideoPage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		684F83292CADC14000238372 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				684F83322CADC14000238372 /* Keyboard_testTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		684F83332CADC14000238372 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				684F833C2CADC14000238372 /* Keyboard_testUITests.swift in Sources */,
+				684F833E2CADC14000238372 /* Keyboard_testUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		684F834A2CADC32B00238372 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				684F83512CADC32B00238372 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		684F832F2CADC14000238372 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 684F831C2CADC13F00238372 /* Keyboard_test */;
+			targetProxy = 684F832E2CADC14000238372 /* PBXContainerItemProxy */;
+		};
+		684F83392CADC14000238372 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 684F831C2CADC13F00238372 /* Keyboard_test */;
+			targetProxy = 684F83382CADC14000238372 /* PBXContainerItemProxy */;
+		};
+		684F83542CADC32B00238372 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 684F834D2CADC32B00238372 /* Keyboard_extension */;
+			targetProxy = 684F83532CADC32B00238372 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		684F833F2CADC14000238372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		684F83402CADC14000238372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		684F83422CADC14000238372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"App_total\"/\"Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "CS5330-GROUP8.Keyboard-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		684F83432CADC14000238372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"App_total\"/\"Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "CS5330-GROUP8.Keyboard-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		684F83452CADC14000238372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "CS5330-GROUP8.Keyboard-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Keyboard_test.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Keyboard_test";
+			};
+			name = Debug;
+		};
+		684F83462CADC14000238372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "CS5330-GROUP8.Keyboard-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Keyboard_test.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Keyboard_test";
+			};
+			name = Release;
+		};
+		684F83482CADC14000238372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "CS5330-GROUP8.Keyboard-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Keyboard_test;
+			};
+			name = Debug;
+		};
+		684F83492CADC14000238372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "CS5330-GROUP8.Keyboard-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Keyboard_test;
+			};
+			name = Release;
+		};
+		684F83572CADC32B00238372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Extension_Keyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Keyboard_extension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "CS5330-GROUP8.Keyboard-test.Keyboard-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		684F83582CADC32B00238372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Extension_Keyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Keyboard_extension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "CS5330-GROUP8.Keyboard-test.Keyboard-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		684F83182CADC13F00238372 /* Build configuration list for PBXProject "Keyboard_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				684F833F2CADC14000238372 /* Debug */,
+				684F83402CADC14000238372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		684F83412CADC14000238372 /* Build configuration list for PBXNativeTarget "Keyboard_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				684F83422CADC14000238372 /* Debug */,
+				684F83432CADC14000238372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		684F83442CADC14000238372 /* Build configuration list for PBXNativeTarget "Keyboard_testTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				684F83452CADC14000238372 /* Debug */,
+				684F83462CADC14000238372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		684F83472CADC14000238372 /* Build configuration list for PBXNativeTarget "Keyboard_testUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				684F83482CADC14000238372 /* Debug */,
+				684F83492CADC14000238372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		684F83592CADC32B00238372 /* Build configuration list for PBXNativeTarget "Keyboard_extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				684F83572CADC32B00238372 /* Debug */,
+				684F83582CADC32B00238372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 684F83152CADC13F00238372 /* Project object */;
+}
